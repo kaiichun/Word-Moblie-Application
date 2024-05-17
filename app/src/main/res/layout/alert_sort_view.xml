@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/tvSortOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort Order"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbAscending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ascending"
+            app:layout_constraintEnd_toStartOf="@+id/rbDescending"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSortOrder" />
+
+        <RadioButton
+            android:id="@+id/rbDescending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Descending"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/rbAscending"
+            app:layout_constraintTop_toBottomOf="@+id/tvSortOrder" />
+
+        <TextView
+            android:id="@+id/tvSortBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sort By"
+            android:textSize="22dp"
+            android:layout_marginTop="@dimen/m"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbAscending" />
+
+        <RadioButton
+            android:id="@+id/rbTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            app:layout_constraintEnd_toStartOf="@+id/rbDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSortBy" />
+
+        <RadioButton
+            android:id="@+id/rbDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rbTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvSortBy" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m"
+            android:backgroundTint="@color/blue"
+            android:text="Done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rbTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

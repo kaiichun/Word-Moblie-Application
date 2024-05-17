@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/containerFragment">
+
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.alvin.wordapplicationindividualproject.ui.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateFragment"
+        android:name="com.alvin.wordapplicationindividualproject.ui.update.UpdateFragment"
+        android:label="UpdateFragment"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_updateFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewDoneDeleteFragment"
+        android:name="com.alvin.wordapplicationindividualproject.ui.viewDoneDelete.ViewDoneDeleteFragment"
+        android:label="ViewDoneDeleteFragment"
+        tools:layout="@layout/fragment_view_done_delete" >
+        <action
+            android:id="@+id/action_viewDoneDelete_to_update"
+            app:destination="@id/updateFragment">
+            <argument
+                android:name="id"
+                app:argType="integer" />
+        </action>
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_viewDoneDeleteFragment_to_updateFragment"
+            app:destination="@id/updateFragment" />
+        <action
+            android:id="@+id/action_viewDoneDeleteFragment_to_containerFragment"
+            app:destination="@id/containerFragment" />
+        <action
+            android:id="@+id/action_viewDoneDeleteFragment_to_containerFragment2"
+            app:destination="@id/containerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/containerFragment"
+        android:name="com.alvin.wordapplicationindividualproject.ui.container.ContainerFragment"
+        android:label="ContainerFragment" >
+        <action
+            android:id="@+id/action_containerFragment_to_viewDoneDeleteFragment"
+            app:destination="@id/viewDoneDeleteFragment" />
+        <action
+            android:id="@+id/action_containerFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+
+</navigation>
