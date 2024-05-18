@@ -14,10 +14,10 @@ import java.util.Date
 @Dao
 interface WordDao {
 
-    @Query("SELECT * FROM Word WHERE status = 0 ORDER BY title DESC")
+    @Query("SELECT * FROM Word WHERE status = 0 ORDER BY title ASC")
     fun getAll(): Flow<List<Word>>
 
-    @Query("SELECT * FROM Word WHERE status = 1 ORDER BY title DESC")
+    @Query("SELECT * FROM Word WHERE status = 1 ORDER BY title ASC")
     fun getCompletedAll(): Flow<List<Word>>
 
     @Query("SELECT * FROM Word WHERE id = :id")
