@@ -7,7 +7,7 @@
     <data>
 
         <variable
-            name="editWork"
+            name="editWord"
             type="com.alvin.wordapplicationindividualproject.ui.update.UpdateViewModel" />
 
     </data>
@@ -19,7 +19,7 @@
         android:layout_gravity="center"
         android:background="@color/white"
         android:orientation="vertical"
-        tools:context=".ui.viewDoneDelete.ViewDoneDeleteFragment">
+        tools:context=".ui.update.UpdateFragment">
 
         <TextView
             android:id="@+id/textView4"

@@ -44,7 +44,7 @@ class UpdateFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.editWork = updateViewModel
+        binding.editWord = updateViewModel
         binding.lifecycleOwner = viewLifecycleOwner
         lifecycleScope.launch {
             updateViewModel.finish.collect {
