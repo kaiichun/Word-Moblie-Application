@@ -46,7 +46,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/svSearchView"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/sort_order" />
 
         </LinearLayout>
 
@@ -63,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/no_completed_word"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:visibility="invisible"
                 app:drawableTopCompat="@drawable/ic_doc"
                 app:layout_constraintBottom_toBottomOf="@+id/rvCompletedWords"
