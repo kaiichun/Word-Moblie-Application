@@ -46,7 +46,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:minLines="1"
-            android:inputType="textMultiLine"
             android:maxLines="1"
             android:padding="@dimen/s"
             android:background="@drawable/edittext_background"
