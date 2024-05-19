@@ -26,14 +26,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_marginTop="13dp"
             android:backgroundTint="@color/red"
             android:text="Delete"
             app:layout_constraintBottom_toTopOf="@+id/guideline1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btnUpdate"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
 
         <Button
             android:id="@+id/btnDone"
@@ -47,7 +46,7 @@
             app:layout_constraintEnd_toStartOf="@+id/btnUpdate"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Button
             android:id="@+id/btnUpdate"
@@ -59,7 +58,8 @@
             app:layout_constraintBottom_toTopOf="@+id/guideline1"
             app:layout_constraintEnd_toStartOf="@+id/btnDelete"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnDone" />
+            app:layout_constraintStart_toEndOf="@+id/btnDone"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <TextView
             android:id="@+id/textView4"
@@ -67,11 +67,12 @@
             android:layout_height="wrap_content"
             android:padding="11dp"
             android:shadowColor="@color/black"
-            android:text="Work Detail"
+            android:text="Word Detail"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline0"
